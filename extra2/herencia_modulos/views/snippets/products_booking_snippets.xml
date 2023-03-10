@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Snippet -->
+    <template id="products_booking_snippets" inherit_id="website.snippets" name="products booking snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="products_booking.product_booking_snippet_content"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg"/>
+        </xpath>
+    </template>
+    
+    <!-- Contenido del snippet -->
+    <template name="Snippet Products Booking" id="product_booking_snippet_content">
+        <section class="s_testimonial">
+            <div class="container">
+                <div class="container s_allow_columns">
+                    <div class="s_rental_search row align-items-start g-3 my-2">
+                        <div class="product_attribute_search_rental d-none col-auto o_not_editable">
+                            <div class="product_attribute_search_rental_name"/>
+                            <select class="s_rental_search_select form-select"/>
+                        </div>
+                        <div class="o_website_sale_daterange_picker variant_attribute col-auto">
+                            <input class="s_rental_search_rental_duration_unit" type="hidden" name="rental_duration_unit"
+                                value=""/>
+                            <div class="s_website_form_datetime input-group date ps-0 o_not_editable"
+                                data-target-input="nearest"
+                                id="rentingDates">
+                                <input type="text" id="s_rental_search_date_input" name="renting_dates"
+                                    class="form-control daterange-input"/>
+                                <div class="input-group-text" data-target="#rentingDates" data-toggle="daterange">
+                                    <i class="fa fa-calendar"/>
+                                </div>
+                                <button class="s_rental_search_btn btn btn-secondary input-group-text">
+                                    <i class="fa fa-search"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </template>
+
+
+    <!-- Buscador snippet cgpt-->
+    <template id="product_search_template" inherit_id="website.snippets" name="Product Search Snippet">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="products_booking.product_search_snippet_content"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg"/>
+        </xpath>
+    </template>
+
+    <!-- Contenido del snippet busqueda-->
+    <template name="Snippet Products Search" id="product_search_snippet_content">
+        <section class="s_testimonial">
+            <div class="container">
+                <div class="container s_allow_columns">
+                    <form class="o_product_search_form" action="/shop" method="get">
+                        <input type="text" name="search" placeholder="Buscar productos..."/>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </section>    
+    </template>
+
+    
+</odoo>

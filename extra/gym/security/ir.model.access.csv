@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_usuario,stargym_usuario_models,model_stargym_usuario_models,base.group_user,1,1,1,1
+access_departamento,formulario_departamento_stargym,model_formulario_departamento_stargym,base.group_user,1,1,1,1
+access_municipio,formulario_municipio_stargym,model_formulario_municipio_stargym,base.group_user,1,1,1,1
+access_pais,formulario_pais_stargym,model_formulario_pais_stargym,base.group_user,1,1,1,1
+access_entrenador,entrenador_modulos,model_entrenador_modulos,base.group_user,1,1,1,1
+access_registro,registro_models,model_registro_models,base.group_user,1,1,1,1
+access_referidos,referidos_models,model_referidos_models,base.group_user,1,1,1,1

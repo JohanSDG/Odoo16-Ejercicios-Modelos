@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="reserva_cliente_form" model="ir.ui.view"> 
+            <field name="name">reserva_cliente.form</field>
+            <field name="model">products_booking</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+
+                        <header>
+                            <field name="estado" widget="statusbar" statusbar_visible="draft,confirmed,done,cancelled" statusbar_colors='{"draft": "blue", "confirmed": "orange", "done": "green", "cancelled": "red"}'/>
+                            <button name="confirmar_reservacion" string="Confirmar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['draft'])]}"/>
+                            <button name="cancelar_reservacion" string="Cancelar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['confirmed'])]}"/>
+                            <button name="mark_as_done" string="Marcar como realizada" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['confirmed'])]}"/>
+                            <button name="change_borrador" string="Pasar a borrador" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['cancelled'])]}"/>
+                        </header>
+
+                        <notebook >
+                            <page name="general_information_coffe" string="Reservacion Cliente">
+                                <group>
+                                
+                                    <field name="usuario_id"/>
+                                    <field name="product_id"/>
+                                    <field name="inicio_fecha"/>
+                                    <field name="final_fecha"/>
+                                    <field name="dias_reservados"/>
+                                    <!-- <field name="valor_reserva"/> -->
+                                    <field name="estado"/>
+                                    <field name="notes"/>
+                                    <field name="lugar_pais"/>
+                                    
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="reservacion_cliente_tree" model="ir.ui.view"> 
+            <field name="name">reservacion_cliente.tree</field>
+            <field name="model">products_booking</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="usuario_id"/>
+                    <field name="product_id"/>
+                    <field name="inicio_fecha"/>
+                    <field name="final_fecha"/>
+                    <field name="dias_reservados"/>
+                    <!-- <field name="valor_reserva"/> -->
+                    <field name="estado"/>
+                    <field name="notes"/>
+                    <field name="lugar_pais"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <menuitem name="Reservas"
+          id="products_booking.menu_root"
+          sequence="1"
+          web_icon="reserva\img\Imagen_negra_buscar2.png"/>
+
+        <record id="reservacion_cliente_action_product" model="ir.actions.act_window">
+            <field name="name">reservacion_cliente</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">products_booking</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="reservacion_cliente_menu" name="Buscar Horario" sequence="1"/>
+        <menuitem id="reservacion_cliente_submenu_name_menu" name="Sub Menu Cliente" action="reservacion_cliente_action_product" parent="reservacion_cliente_menu" sequence="1"/>
+</odoo>
+

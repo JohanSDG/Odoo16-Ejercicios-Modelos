@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mercedes_form" model="ir.ui.view"> 
+            <field name="name">mercedes.form</field>
+            <field name="model">reservacion_mercedes_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombre_vehiculo"/>
+                            <field name="colorvehiculo"/>
+                            <field name="fecha_reservacion"/>
+                            <field name="descripcion"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="mercedes_tree" model="ir.ui.view"> 
+            <field name="name">mercedes.tree</field>
+            <field name="model">reservacion_mercedes_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombre_vehiculo"/>
+                    <field name="colorvehiculo"/>
+                    <field name="fecha_reservacion"/>
+                    <field name="descripcion"/>
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="mercedesreserva_action_product" model="ir.actions.act_window">
+            <field name="name">Mercedes Reserva</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">reservacion_mercedes_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem id="mercedesreserva_menu" name="Reservacion Mercedes Benz" sequence="5"/>
+        <menuitem id="mercedes_submenu_name_menu" name="Sub Reservacion Mercedez" action="mercedesreserva_action_product" parent="mercedesreserva_menu" sequence="5"/>
+</odoo>

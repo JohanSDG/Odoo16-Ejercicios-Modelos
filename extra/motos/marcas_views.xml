@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario -->
+        <record id="marca_grade_form" model="ir.ui.view"> 
+            <field name="name">marcas.grade.form</field>
+            <field name="model">model_marcas</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                            <field name="name"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="marca_grade_tree" model="ir.ui.view"> 
+            <field name="name">marcas.grade.tree</field>
+            <field name="model">model_marcas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                   
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="marca_action_product" model="ir.actions.act_window">
+            <field name="name">Marcas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">model_marcas</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem id="marca_submenu_name_menu" name="Sub marcas" action="marca_action_product" parent="motocicleta_menu" sequence="8"/>
+</odoo>

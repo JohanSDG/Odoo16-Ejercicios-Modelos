@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="formulario_cliente_form" model="ir.ui.view"> 
+            <field name="name">formulario_cliente.form</field>
+            <field name="model">products_booking</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+
+                        <header>
+                            <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done,cancelled" statusbar_colors='{"draft": "blue", "confirmed": "orange", "done": "green", "cancelled": "red"}'/>
+                            <button name="confirmar_reservacion" string="Confirm reservation" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                            <button name="cancel_reservation" string="Cancel reservation" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                            <button name="mark_as_done" string="Mark as done" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                            <button name="change_borrador" string="Go to draft" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['cancelled'])]}"/>
+                        </header>
+
+                        <notebook >
+                            <page name="general_information" string="Informacion Cliente ">
+                                <group>
+                                    <field name="usuario_id"/>
+                                    <field name="product_id"/>
+                                    <field name="birth_date"/>
+                                    <field name="age"/>
+                                    <field name="tipeidentification"/>
+                                    <field name="number_identification"/>
+                                    <field name="Star_date"/>
+                                    <field name="End_date"/>
+                                    <field name="Reserved_days"/>
+                                    <field name="state"/>
+                                    <field name="notes"/>
+                                    <field name="country"/>
+                                    <field name="department"/>
+                                    <field name="municipality"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="formulario_cliente_tree" model="ir.ui.view"> 
+            <field name="name">formulario_cliente.tree</field>
+            <field name="model">products_booking</field>
+            <field name="arch" type="xml">
+                <tree>
+                <field name="usuario_id"/>
+                <field name="product_id"/>
+                <field name="birth_date"/>
+                <field name="age"/>
+                <field name="tipeidentification"/>
+                <field name="number_identification"/>
+                <field name="Star_date"/>
+                <field name="End_date"/>
+                <field name="Reserved_days"/>
+                <field name="state"/>
+                <field name="notes"/>
+                <field name="country"/>
+                <field name="department"/>
+                <field name="municipality"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_cliente_action_product" model="ir.actions.act_window">
+            <field name="name">formulario_cliente</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">products_booking</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_cliente_menu" name="Formulario Diego Prueba" sequence="25"/>
+        <menuitem id="formulario_cliente_submenu_name_menu" name="Formulario Diego" action="formulario_cliente_action_product" parent="formulario_cliente_menu" sequence="25"/>
+</odoo>

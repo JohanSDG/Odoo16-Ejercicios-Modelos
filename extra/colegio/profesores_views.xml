@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<record id="profesor_grade_form" model="ir.ui.view"> 
+            <field name="name">profesor.form</field>
+            <field name="model">profesores_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombreProfesor"/>
+                            <field name="apellidoP"/>
+                            <!--<field name="fechaNacimientoP"/>-->
+                            <field name="telefonoP"/>
+                            <field name="direccionP"/>
+                            <field name="emailP"/>
+                            <!--<field name="edadP"/>-->
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="profesor_grade_tree" model="ir.ui.view"> 
+            <field name="name">profesor.tree</field>
+            <field name="model">profesores_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombreProfesor"/>
+                    <field name="apellidoP"/>
+                    <!--<field name="fechaNacimientoP"/>-->
+                    <field name="telefonoP"/>
+                    <field name="direccionP"/>
+                    <field name="emailP"/>
+                    <!--<field name="edadP"/>-->
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="profesor_action_product" model="ir.actions.act_window">
+            <field name="name">profesor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">profesores_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="profesor_menu" name="Profesores" sequence="6"/>
+        <menuitem id="`profesor_submenu_name_menu" name="Sub Menu" action="profesor_action_product" parent="profesor_menu" sequence="6"/>
+</odoo>

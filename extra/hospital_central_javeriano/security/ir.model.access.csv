@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hospital,hospitalcj_clientes_models,model_hospitalcj_clientes_models,base.group_user,1,1,1,1
+access_departamento,formulario_departamento_clinicacj,model_formulario_departamento_clinicacj,base.group_user,1,1,1,1
+access_municipio,formulario_municipio_clinicacj,model_formulario_municipio_clinicacj,base.group_user,1,1,1,1
+access_pais,formulario_pais_clinicacj,model_formulario_pais_clinicacj,base.group_user,1,1,1,1
+access_doctor,formulario_doctor_clinicacj,model_formulario_doctor_clinicacj,base.group_user,1,1,1,1

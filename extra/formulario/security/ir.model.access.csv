@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formulario,formulario_models,model_formulario_models,base.group_user,1,1,1,1
+access_departamento,formulario_departamento,model_formulario_departamento,base.group_user,1,1,1,1
+access_municipio,formulario_municipio,model_formulario_municipio,base.group_user,1,1,1,1
+access_pais,nombre_pais,model_nombre_pais,base.group_user,1,1,1,1

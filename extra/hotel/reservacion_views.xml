@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+<!-- reservacion-->
+        <record id="reservacion_grade_form" model="ir.ui.view"> 
+            <field name="name">reservacion.form</field>
+            <field name="model">model_reservacion</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                        <field name="ingeso_huesped" />
+                        <field name="salida_huesped" />
+                        <field name="dias_reservados"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="reservacion_grade_tree" model="ir.ui.view"> 
+            <field name="name">reservacion.tree</field>
+            <field name="model">model_reservacion</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="ingeso_huesped" />
+                    <field name="salida_huesped" />
+                    <field name="dias_reservados"/>
+                            
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="reservacion_action_product" model="ir.actions.act_window">
+            <field name="name">reservacion</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">model_reservacion</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="reservacion_menu" name="reservacion" sequence="6"/>
+        <menuitem id="reservacion_submenu_name_menu" name="Sub Menu" action="reservacion_action_product" parent="reservacion_menu" sequence="6"/>
+</odoo>
+     

@@ -1,0 +1,144 @@
+<odoo>
+  <data>
+    <!-- Vista formulario con estilos para las reservas -->
+        <record id="products_booking_form_view" model="ir.ui.view">
+        <field name="name">products_booking.form</field>
+        <field name="model">products_booking</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Formulario de reservas">
+                <header>
+                
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done,cancelled" statusbar_colors='{"draft": "blue", "confirmed": "orange", "done": "green", "cancelled": "red"}'/>
+                    <button name="confirm_reservation" string="Confirmar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                    <button name="cancel_reservation" string="Cancelar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                    <button name="mark_as_done" string="Marcar como realizada" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                    <button name="change_to_draft" string="Pasar a borrador" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['cancelled'])]}"/>
+
+                </header>
+                <!-- Sección principal del formulario -->
+                <notebook >
+                  <page name="general_information_booking" string="Informacion General">
+                      <!-- Título con el número de reserva -->
+                      <h1>
+                          <field name="number" string="Número de reserva"/>
+                      </h1>
+                      <!-- Fila con dos columnas para organizar los campos de la reserva -->
+                      <group>
+                          <!-- Columna con los campos de información básica de la reserva -->
+                          <group>
+                              <field name="customer_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="product_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="start_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="end_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                          </group>
+                          <!-- Columna con los campos adicionales de la reserva -->
+                          <group>
+                              <field name="days_booked"/>
+                              <field name="valor_reserva"/>
+                              <field name="notes"/>
+                          </group>
+                      </group>
+                  </page>
+                  <page name="booking_info_website" string="Info Website">
+                    <group name="consumos" string="Consumos Adicionales">
+                      <!-- <field name="website_description"/> -->
+                    </group>
+                  </page>
+                </notebook>
+
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista Lista -->
+
+    <record model="ir.ui.view" id="products_booking.list">
+      <field name="name">products_booking list</field>
+      <field name="model">products_booking</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="number"/>
+          <field name="customer_id"/>
+          <field name="product_id" domain="[('can_be_booked', '=', True)]"/>
+          <field name="start_date"/>
+          <field name="end_date"/>
+          <field name="days_booked"/>
+          <field name="valor_reserva"/>
+          <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'done'" decoration-warning="state == 'confirmed'" decoration-danger="state == 'cancelled'"/>
+        </tree>
+      </field>
+    </record>
+    
+
+
+    <!-- search views -->
+    <record id="products_booking_view_search" model="ir.ui.view">
+      <field name="name">products_booking.view.search</field>
+      <field name="model">products_booking</field>
+      <field name="arch" type="xml">
+        <search string="Vista de busqueda">
+
+          <!-- busqueda rapida -->
+          <field name="customer_id" string="Buscar reserva para cliente: "/>
+          <field name="product_id" string="Buscar reserva para producto: "/>
+
+          <!-- vista de panel vista busqueda / arbol -->
+          <searchpanel>
+            <field name="state" string="Reservas por estado"/>
+            <field name="customer_id" string="Reserva por cliente" />
+          </searchpanel>
+          
+        </search>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="products_booking.action_window">
+      <field name="name">Gestion de reservas</field>
+      <field name="res_model">products_booking</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+
+    <record model="ir.actions.server" id="products_booking.action_server">
+      <field name="name">products_booking server</field>
+      <field name="model_id" ref="model_products_booking"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+      <menuitem name="Reservas"
+      id="products_booking.menu_root"
+      sequence="1"
+      web_icon="products_booking,static/src/img/icon.png"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="products_booking.menu_1" parent="products_booking.menu_root"/>
+    <menuitem name="Menu 2" id="products_booking.menu_2" parent="products_booking.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="List" id="products_booking.menu_1_list" parent="products_booking.menu_1" action="products_booking.action_window"/>
+    <menuitem name="Server to list" id="products_booking" parent="products_booking.menu_2" action="products_booking.action_server"/>
+
+  </data>
+</odoo>

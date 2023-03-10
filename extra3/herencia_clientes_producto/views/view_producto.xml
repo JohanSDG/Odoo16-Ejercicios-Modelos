@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_template_inherit_module_name" model="ir.ui.view">
+            <field name="name">product.template.view.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+                                   <!-- modulo de donde saco la carpeta y el id -->
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_tag_ids']" position="after">
+                    <!-- <field name="list_price"></field> -->
+                    <!-- <field name="standard_price"></field> -->
+                    <field name="rentabilidad"></field>
+                    <field name="porcentaje_rentabilidad"></field>
+                    <field name="socio1"/>
+                    <field name="socio2"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario -->
+        <record id="avion_grade_form" model="ir.ui.view"> 
+            <field name="name">avion.grade.form</field>
+            <field name="model">aviones_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                            <field name="nombreavion"/>
+                            <field name="modeloavion"/>
+                            <field name="numeroavion"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="avion_grade_tree" model="ir.ui.view"> 
+            <field name="name">avion.grade.tree</field>
+            <field name="model">aviones_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombreavion"/>
+                    <field name="modeloavion"/>
+                    <field name="numeroavion"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="avion_action_product" model="ir.actions.act_window">
+            <field name="name">Los Aviones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">aviones_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="avion_menu" name="aviones" sequence="10"/>
+        <menuitem id="avion_submenu_name_menu" name="Sub aviones" action="avion_action_product" parent="avion_menu" sequence="9"/>
+</odoo>

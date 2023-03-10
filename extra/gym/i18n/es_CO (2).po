@@ -1,0 +1,439 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gym
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230115\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-02 22:52+0000\n"
+"PO-Revision-Date: 2023-03-02 22:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_referidos_models__apellido_usuario
+#: model:ir.model.fields,field_description:gym.field_registro_models__apellido_usuario
+msgid "Apellido"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__fecha_nacimiento
+msgid "Birth date"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__tipoidentificacion__cedula
+msgid "Cedula"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__ciudad
+msgid "City"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__estado__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: gym
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+msgid "Confirmar"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__pais_id
+msgid "Country"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__create_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__create_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__create_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__create_uid
+#: model:ir.model.fields,field_description:gym.field_referidos_models__create_uid
+#: model:ir.model.fields,field_description:gym.field_registro_models__create_uid
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__create_date
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__create_date
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__create_date
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__create_date
+#: model:ir.model.fields,field_description:gym.field_referidos_models__create_date
+#: model:ir.model.fields,field_description:gym.field_registro_models__create_date
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__tipoidentificacion__dni
+msgid "DNI"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__nombre_departamento
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__departamento_id
+#: model:ir.ui.menu,name:gym.departamento_menu
+msgid "Departamento"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_registro_models__days_booked
+msgid "Dias"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__direccion
+msgid "Direccion"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__display_name
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__display_name
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__display_name
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__display_name
+#: model:ir.model.fields,field_description:gym.field_referidos_models__display_name
+#: model:ir.model.fields,field_description:gym.field_registro_models__display_name
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__discapacidad
+msgid "Do you have discapacibility"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__email
+msgid "Email"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__peso
+msgid "Enter your weight"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.entrenador_action_product
+#: model:ir.ui.menu,name:gym.entrenador_menu
+msgid "Entrenador/a"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__estado
+msgid "Estado"
+msgstr ""
+
+#. module: gym
+#: model:ir.model,name:gym.model_stargym_usuario_models
+msgid "Este formulario es para los clientes premium de starGym"
+msgstr ""
+
+#. module: gym
+#: model:ir.model,name:gym.model_referidos_models
+#: model:ir.model,name:gym.model_registro_models
+msgid "Este formulario es para los clientes premium starGym"
+msgstr ""
+
+#. module: gym
+#: model:ir.model,name:gym.model_entrenador_modulos
+#: model:ir.model,name:gym.model_formulario_departamento_stargym
+#: model:ir.model,name:gym.model_formulario_municipio_stargym
+#: model:ir.model,name:gym.model_formulario_pais_stargym
+msgid "Este formulario es para los clientes premium starbucks"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.municipio_action_product
+msgid "Formulario"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__id
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__id
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__id
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__id
+#: model:ir.model.fields,field_description:gym.field_referidos_models__id
+#: model:ir.model.fields,field_description:gym.field_registro_models__id
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__id
+msgid "ID"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__tipoidentificacion__pasaporte
+msgid "Identificacion Pasaporte"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__estado__inactive
+msgid "Inactivo"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos____last_update
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym____last_update
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym____last_update
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym____last_update
+#: model:ir.model.fields,field_description:gym.field_referidos_models____last_update
+#: model:ir.model.fields,field_description:gym.field_registro_models____last_update
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__apellido
+msgid "Last Name"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__write_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__write_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__write_uid
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__write_uid
+#: model:ir.model.fields,field_description:gym.field_referidos_models__write_uid
+#: model:ir.model.fields,field_description:gym.field_registro_models__write_uid
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__write_date
+#: model:ir.model.fields,field_description:gym.field_formulario_departamento_stargym__write_date
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__write_date
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__write_date
+#: model:ir.model.fields,field_description:gym.field_referidos_models__write_date
+#: model:ir.model.fields,field_description:gym.field_registro_models__write_date
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gym
+#: model_terms:ir.ui.view,arch_db:gym.departamento_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.entrenador_form
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+#: model_terms:ir.ui.view,arch_db:gym.municipio_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.pais_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.referidos_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.registro_form
+msgid "Level"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__horarios_entrenamiento__manana
+msgid "Mañana"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__horarios_entrenamiento__mediodia
+msgid "Medio Dia"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__genero__hombre
+msgid "Men"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__municipio_id
+msgid "Municipality"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_formulario_municipio_stargym__nombre_municipio
+msgid "Municipio"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__nombre
+msgid "Name"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__horarios_entrenamiento__noche
+msgid "Noche"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_referidos_models__nombre_referido
+#: model:ir.model.fields,field_description:gym.field_registro_models__nombre_usuario
+msgid "Nombre"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__apellido
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__nombre_entrenador
+msgid "Nombre Entrenador"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.pais_menu
+msgid "Pais"
+msgstr ""
+
+#. module: gym
+#: model_terms:ir.ui.view,arch_db:gym.departamento_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.entrenador_form
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+#: model_terms:ir.ui.view,arch_db:gym.municipio_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.pais_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.referidos_grade_form
+#: model_terms:ir.ui.view,arch_db:gym.registro_form
+msgid "Partner Level"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.formulario_clientegym_menu
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+msgid "Premium StarGym"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.referidos_menu
+msgid "Referido"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__referido
+msgid "Referrals"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__entrenador
+msgid "Seleccione Entrenador/a"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__horarios_entrenamiento
+msgid "Seleccione Horario"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__genero
+msgid "Seleccione su genero"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__departamento_id
+msgid "State"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.departamento_submenu_name_menu
+msgid "Sub Menu Departamento"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.entrenador_submenu_name_menu
+msgid "Sub Menu Entrenador/a"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.pais_submenu_name_menu
+msgid "Sub Menu Pais"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.referidos_submenu_name_menu
+msgid "Sub Menu Referidos"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.municipio_submenu_name_menu
+msgid "Sub Menu municipio"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.registro_submenu_name_menu
+msgid "Sub Menu registro"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.formulario_clientegym_submenu_name_menu
+msgid "Sub StarGym"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__horarios_entrenamiento__tarde
+msgid "Tarde"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_entrenador_modulos__telefono
+msgid "Telefono"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__genero__mujer
+msgid "Women"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.formulario_clientegym_action_product
+msgid "cliente StarGym"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.departamento_action_product
+msgid "departamento"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_registro_models__ingreso_date
+msgid "fecha ingreso"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_registro_models__salida_date
+msgid "fecha salida"
+msgstr ""
+
+#. module: gym
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+msgid "inactivo"
+msgstr ""
+
+#. module: gym
+#: model:ir.ui.menu,name:gym.municipio_menu
+msgid "municipio"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields.selection,name:gym.selection__stargym_usuario_models__estado__new
+#: model_terms:ir.ui.view,arch_db:gym.formulario_clientegym_form
+msgid "nuevo"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__numero_identificacion
+msgid "number identification"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.pais_action_product
+#: model:ir.model.fields,field_description:gym.field_formulario_pais_stargym__nombre_pais
+msgid "pais"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.referidos_action_product
+msgid "referidos"
+msgstr ""
+
+#. module: gym
+#: model:ir.actions.act_window,name:gym.registro_action_product
+#: model:ir.ui.menu,name:gym.registro_menu
+msgid "registro"
+msgstr ""
+
+#. module: gym
+#: model:ir.model.fields,field_description:gym.field_stargym_usuario_models__tipoidentificacion
+msgid "seleccione Tipo Identificacion"
+msgstr ""

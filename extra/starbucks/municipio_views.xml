@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Municipio-->
+        <record id="municipio_grade_form" model="ir.ui.view"> 
+            <field name="name">municipio.form</field>
+            <field name="model">formulario_municipio_starbucks</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nombre_municipio"/>
+                            <field name="departamento_id"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="municipio_grade_tree" model="ir.ui.view"> 
+            <field name="name">municipio.tree</field>
+            <field name="model">formulario_municipio_starbucks</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_municipio"/>
+                    <field name="departamento_id"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="municipio_action_product" model="ir.actions.act_window">
+            <field name="name">Formulario</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_municipio_starbucks</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="municipio_menu" name="municipio" sequence="10"/>
+        <menuitem id="municipio_submenu_name_menu" name="Sub Menu municipio" action="municipio_action_product" parent="municipio_menu" sequence="7"/>
+        
+</odoo>

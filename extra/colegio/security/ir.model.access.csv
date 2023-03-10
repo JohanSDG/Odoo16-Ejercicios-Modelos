@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_estudiantes,formulario_colegio_models,model_formulario_colegio_models,base.group_user,1,1,1,1
+access_materias,materias_models,model_materias_models,base.group_user,1,1,1,1
+access_profesores,profesores_models,model_profesores_models,base.group_user,1,1,1,1

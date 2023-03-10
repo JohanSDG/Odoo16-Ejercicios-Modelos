@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario -->
+        <record id="pets_grade_form" model="ir.ui.view"> 
+            <field name="name">pets.grade.form</field>
+            <field name="model">pets_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                            <field name="nombre"/>
+                            <field name="especie"/>
+                            <field name="apodo"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="pets_grade_tree" model="ir.ui.view"> 
+            <field name="name">pets.grade.tree</field>
+            <field name="model">pets_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="especie"/>
+                    <field name="apodo"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="pets_action_product" model="ir.actions.act_window">
+            <field name="name">Mis mascotas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pets_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="pets_menu" name="Mascotas" sequence="10"/>
+        <menuitem id="pets_submenu_name_menu" name="Mascotas Sub" action="pets_action_product" parent="pets_menu" sequence="10"/>
+</odoo>

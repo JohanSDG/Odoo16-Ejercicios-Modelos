@@ -1,0 +1,204 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* products_booking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-01 23:45+0000\n"
+"PO-Revision-Date: 2023-01-01 19:00-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2\n"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_product_product__available_on_date
+#: model:ir.model.fields,field_description:products_booking.field_product_template__available_on_date
+msgid "Available on Date"
+msgstr "Disponible en fecha"
+
+#. module: products_booking
+#: model:ir.model.fields.selection,name:products_booking.selection__products_booking__state__draft
+msgid "Borrador"
+msgstr "Borrador"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_product_product__can_be_booked
+#: model:ir.model.fields,field_description:products_booking.field_product_template__can_be_booked
+msgid "Can be Booked"
+msgstr "Puede ser reservado"
+
+#. module: products_booking
+#: model:ir.model.fields.selection,name:products_booking.selection__products_booking__state__cancelled
+msgid "Cancelado"
+msgstr "Cancelado"
+
+#. module: products_booking
+#: model_terms:ir.ui.view,arch_db:products_booking.products_booking_form_view
+msgid "Cancelar reserva"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields.selection,name:products_booking.selection__products_booking__state__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: products_booking
+#: model_terms:ir.ui.view,arch_db:products_booking.products_booking_form_view
+msgid "Confirmar reserva"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__customer_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__days_booked
+msgid "Days Booked"
+msgstr "Dias reservados"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__display_name
+msgid "Display Name"
+msgstr "Nombre Display"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__end_date
+msgid "End Date"
+msgstr "Fecha salida"
+
+#. module: products_booking
+#: model:ir.model.fields,help:products_booking.field_product_product__available_on_date
+#: model:ir.model.fields,help:products_booking.field_product_template__available_on_date
+msgid "Enter a date to search for available rooms on that date"
+msgstr "Ingresa una fecha valida"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__state
+msgid "Estado"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.actions.act_window,name:products_booking.action_window
+msgid "Gestion de reservas"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__id
+msgid "ID"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.ui.menu,name:products_booking.menu_1_list
+msgid "List"
+msgstr "Lista"
+
+#. module: products_booking
+#: model_terms:ir.ui.view,arch_db:products_booking.products_booking_form_view
+msgid "Marcar como realizada"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.ui.menu,name:products_booking.menu_1
+msgid "Menu 1"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.ui.menu,name:products_booking.menu_2
+msgid "Menu 2"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__number
+msgid "Numero de reserva"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model,name:products_booking.model_product_template
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: products_booking
+#: model:ir.model.fields.selection,name:products_booking.selection__products_booking__state__done
+msgid "Realizado"
+msgstr ""
+
+#. module: products_booking
+#: model_terms:ir.ui.view,arch_db:products_booking.products_booking_form_view
+msgid "Reserva"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.ui.menu,name:products_booking.menu_root
+msgid "Reservas"
+msgstr ""
+
+#. module: products_booking
+#. odoo-python
+#: code:addons/products_booking/models/models.py:0
+#, python-format
+msgid "Revisa la fecha de ingreso y salida"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.ui.menu,name:products_booking.products_booking
+msgid "Server to list"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__valor_reserva
+msgid "Valor Reserva"
+msgstr ""
+
+#. module: products_booking
+#: model:ir.model.fields,field_description:products_booking.field_products_booking__notes
+msgid "notes"
+msgstr "Notas"
+
+#. module: products_booking
+#: model:ir.model,name:products_booking.model_products_booking
+msgid "products_booking"
+msgstr "Productos reservados"
+
+#. module: products_booking
+#: model:ir.actions.server,name:products_booking.action_server
+msgid "products_booking server"
+msgstr "Reserva Productos Server"

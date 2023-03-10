@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<record id="materias_grade_form" model="ir.ui.view"> 
+            <field name="name">materias.form</field>
+            <field name="model">materias_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombreMateria"/>
+                            <field name="descripcion"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="materias_grade_tree" model="ir.ui.view"> 
+            <field name="name">materias.tree</field>
+            <field name="model">materias_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombreMateria"/>
+                    <field name="descripcion"/>
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="materias_action_product" model="ir.actions.act_window">
+            <field name="name">materias</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">materias_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="materias_menu" name="materias" sequence="6"/>
+        <menuitem id="materias_submenu_name_menu" name="Sub Menu" action="materias_action_product" parent="materias_menu" sequence="6"/>
+</odoo>

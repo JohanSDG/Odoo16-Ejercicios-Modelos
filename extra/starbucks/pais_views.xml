@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Pais-->
+        <record id="pais_grade_form" model="ir.ui.view"> 
+            <field name="name">pais.form</field>
+            <field name="model">formulario_pais_starbucks</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nombre_pais"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="pais_grade_tree" model="ir.ui.view"> 
+            <field name="name">pais.tree</field>
+            <field name="model">formulario_pais_starbucks</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_pais"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="pais_action_product" model="ir.actions.act_window">
+            <field name="name">pais</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_pais_starbucks</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="pais_menu" name="Pais" sequence="10"/>
+        <menuitem id="pais_submenu_name_menu" name="Sub Menu Pais" action="pais_action_product" parent="pais_menu" sequence="7"/>
+
+</odoo>

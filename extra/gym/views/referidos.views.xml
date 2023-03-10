@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Referido-->
+        <record id="referidos_grade_form" model="ir.ui.view"> 
+            <field name="name">referidos.form</field>
+            <field name="model">referidos_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nombre_referido"/>
+                            <field name="apellido_usuario"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="referidos_grade_tree" model="ir.ui.view"> 
+            <field name="name">referidos.tree</field>
+            <field name="model">referidos_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_referido"/>
+                    <field name="apellido_usuario"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="referidos_action_product" model="ir.actions.act_window">
+            <field name="name">referidos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">referidos_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="referidos_menu" name="Referido" sequence="7"/>
+        <menuitem id="referidos_submenu_name_menu" name="Sub Menu Referidos" action="referidos_action_product" parent="referidos_menu" sequence="7"/>
+
+</odoo>

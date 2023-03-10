@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario -->
+        <record id="motos_grade_form" model="ir.ui.view"> 
+            <field name="name">avion.grade.form</field>
+            <field name="model">motos_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                            <field name="nombre_moto"/>
+                            <field name="numero_rueda"/>
+                            <field name="numero_chacis"/>
+                            <field name="marcas_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="motos_grade_tree" model="ir.ui.view"> 
+            <field name="name">avion.grade.tree</field>
+            <field name="model">motos_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre_moto"/>
+                    <field name="numero_rueda"/>
+                    <field name="numero_chacis"/>
+                    <field name="marcas_ids"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="moto_action_product" model="ir.actions.act_window">
+            <field name="name">Motocicletas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">motos_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="motocicleta_menu" name="moto" sequence="8"/>
+        <menuitem id="avion_submenu_name_menu" name="Sub moto" action="moto_action_product" parent="motocicleta_menu" sequence="8"/>
+</odoo>

@@ -1,0 +1,309 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* starbucks
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230115\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-02 18:33+0000\n"
+"PO-Revision-Date: 2023-03-02 18:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__fecha_nacimiento
+msgid "Birth date"
+msgstr "Fecha nacimiento"
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__estado__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__estado__cancelled
+msgid "Cancelado"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+msgid "Cancelar reserva"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__estado__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+msgid "Confirmar reserva"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__create_uid
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__create_uid
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__create_uid
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__create_uid
+msgid "Created by"
+msgstr "Creador Por"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__create_date
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__create_date
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__create_date
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__create_date
+msgid "Created on"
+msgstr "Fecha Creacion"
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__tipoidentificacion__dni
+msgid "DNI"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__nombre_departamento
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__departamento_id
+#: model:ir.ui.menu,name:starbucks.departamento_menu
+msgid "Departamento"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__display_name
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__display_name
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__display_name
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__email
+msgid "Email"
+msgstr "Correo electronico"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__estado
+msgid "Estado"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model,name:starbucks.model_formulario_departamento_starbucks
+#: model:ir.model,name:starbucks.model_formulario_municipio_starbucks
+#: model:ir.model,name:starbucks.model_formulario_pais_starbucks
+#: model:ir.model,name:starbucks.model_starbucks_clientes_models
+msgid "Este formulario es para los clientes premium starbucks"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.actions.act_window,name:starbucks.municipio_action_product
+msgid "Formulario"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__id
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__id
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__id
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__id
+msgid "ID"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__tipoidentificacion__cedula
+msgid "Identification"
+msgstr "Identificacion"
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+msgid "Informacion Cliente Premium Starbucks"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks____last_update
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks____last_update
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks____last_update
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__apellido
+msgid "Last Name"
+msgstr "Apellido"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__write_uid
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__write_uid
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__write_uid
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_departamento_starbucks__write_date
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__write_date
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__write_date
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.departamento_grade_form
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+#: model_terms:ir.ui.view,arch_db:starbucks.municipio_grade_form
+#: model_terms:ir.ui.view,arch_db:starbucks.pais_grade_form
+msgid "Level"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+msgid "Marcar como realizada"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_formulario_municipio_starbucks__nombre_municipio
+msgid "Municipio"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__nombre
+msgid "Name"
+msgstr "Nombre"
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.pais_menu
+msgid "Pais"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.departamento_grade_form
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+#: model_terms:ir.ui.view,arch_db:starbucks.municipio_grade_form
+#: model_terms:ir.ui.view,arch_db:starbucks.pais_grade_form
+msgid "Partner Level"
+msgstr ""
+
+#. module: starbucks
+#: model_terms:ir.ui.view,arch_db:starbucks.formulario_cliente_form
+msgid "Pasar a borrador"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__tipoidentificacion__pasaporte
+msgid "Passport"
+msgstr "Pasaporte"
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.formulario_cliente_menu
+msgid "Premium Starbucks"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__estado__done
+msgid "Realizado"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__genero
+msgid "Seleccione su genero"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.formulario_cliente_submenu_name_menu
+msgid "Sub Menu Cliente Starbucks"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.departamento_submenu_name_menu
+msgid "Sub Menu Departamento"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.pais_submenu_name_menu
+msgid "Sub Menu Pais"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.municipio_submenu_name_menu
+msgid "Sub Menu municipio"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__pais_id
+msgid "country"
+msgstr "Pais"
+
+#. module: starbucks
+#: model:ir.actions.act_window,name:starbucks.departamento_action_product
+msgid "departamento"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.actions.act_window,name:starbucks.formulario_cliente_action_product
+msgid "formulario_cliente"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__numero_identificacion
+msgid "identification number"
+msgstr "Numero Identifiacion"
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__genero__hombre
+msgid "men"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__municipio_id
+msgid "municipality"
+msgstr "Municipio"
+
+#. module: starbucks
+#: model:ir.ui.menu,name:starbucks.municipio_menu
+msgid "municipio"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__observaciones
+msgid "observations"
+msgstr "Obeservacion"
+
+#. module: starbucks
+#: model:ir.actions.act_window,name:starbucks.pais_action_product
+#: model:ir.model.fields,field_description:starbucks.field_formulario_pais_starbucks__nombre_pais
+msgid "pais"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__tipoidentificacion
+msgid "select identification type"
+msgstr ""
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__start_date
+msgid "start date"
+msgstr "Fecha Inicio"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__end_date
+msgid "start end"
+msgstr "Fecha final"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__departamento_id
+msgid "state"
+msgstr "Departamento"
+
+#. module: starbucks
+#: model:ir.model.fields,field_description:starbucks.field_starbucks_clientes_models__days_booked
+msgid "total days"
+msgstr "Dias totales"
+
+#. module: starbucks
+#: model:ir.model.fields.selection,name:starbucks.selection__starbucks_clientes_models__genero__mujer
+msgid "women"
+msgstr "Mujer"

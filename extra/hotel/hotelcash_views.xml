@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario principal -->
+        <record id="huesped_grade_form" model="ir.ui.view"> 
+            <field name="name">huesped.form</field>
+            <field name="model">huespedpersonas_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombre"/>
+                            <field name="apellido"/>
+                            <field name="identificacion"/>
+                            <field name="observaciones"/>
+                            <field name="departamento_id"/>
+                            <field name="municipio_id"/>
+                            <field name="pais_id"/>
+                            
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="huesped_grade_tree" model="ir.ui.view"> 
+            <field name="name">huesped.tree</field>
+            <field name="model">huespedpersonas_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="identificacion"/>
+                    <field name="observaciones"/>
+                    <field name="departamento_id"/>
+                    <field name="municipio_id"/>
+                    <field name="pais_id"/>
+                    
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="huesped_action_product" model="ir.actions.act_window">
+            <field name="name">huesped</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">huespedpersonas_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="huesped_menu" name="Huesped" sequence="6"/>
+        <menuitem id="huesped_submenu_name_menu" name="Sub Menu" action="huesped_action_product" parent="huesped_menu" sequence="6"/>
+
+</odoo>

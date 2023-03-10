@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Pais-->
+        <record id="registro_form" model="ir.ui.view"> 
+            <field name="name">registro.form</field>
+            <field name="model">registro_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>                           
+                            <field name="nombre_usuario"/>
+                            <field name="apellido_usuario"/>
+                            <field name="ingreso_date"/>
+                            <field name="days_booked"/>
+                            <!-- <field name="salida_date"/>
+                            <field name="plan_usuario"/>
+                            <field name="precio_producto"/> -->
+                            <!-- <field name="valor_total"/> -->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="registro_tree" model="ir.ui.view"> 
+            <field name="name">registro.tree</field>
+            <field name="model">registro_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre_usuario"/>
+                    <field name="apellido_usuario"/>
+                    <field name="ingreso_date"/>
+                    <field name="days_booked"/>
+                    <!-- <field name="valor_total"/> -->                   
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="registro_action_product" model="ir.actions.act_window">
+            <field name="name">registro</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">registro_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="registro_menu" name="registro" sequence="7"/>
+        <menuitem id="registro_submenu_name_menu" name="Sub Menu registro" action="registro_action_product" parent="registro_menu" sequence="7"/>
+
+</odoo>

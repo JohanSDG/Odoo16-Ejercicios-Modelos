@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="formulario_cliente_form" model="ir.ui.view"> 
+            <field name="name">Formulario Cliente Hospital.form</field>
+            <field name="model">hospitalcj_clientes_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+
+                        <header>
+                            <field name="estado" widget="statusbar" statusbar_visible="draft,confirmed,done,cancelled" statusbar_colors='{"draft": "blue", "confirmed": "orange", "done": "green", "cancelled": "red"}'/>
+                            <button name="confirmar_reservacion" string="Confirmar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['draft'])]}"/>
+                            <button name="cancelar_reservacion" string="Cancelar reserva" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['confirmed'])]}"/>
+                            <button name="mark_as_done" string="Marcar como realizada" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['confirmed'])]}"/>
+                            <button name="change_borrador" string="Pasar a borrador" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['cancelled'])]}"/>
+                        </header>
+
+                        <notebook >
+                            <page name="general_information_hospitaljc" string="Informacion Cliente Hospital Central Javeriano">
+                                <group>
+                                    <field name="nombre"/>
+                                    <field name="apellido"/>
+                                    <field name="tipoidentificacion"/>
+                                    <field name="numero_identificacion"/>
+                                    <field name="genero"/>
+                                    <field name="fecha_nacimiento"/>
+                                    <field name="email"/>
+                                    <field name="departamento_id"/>
+                                    <field name="municipio_id"/>
+                                    <field name="pais_id"/>
+                                    <field name="estado"/>
+                                    <field name="doctor"/>
+                                     <!-- <field name="cita_medica"/> -->
+                                    <field name="observaciones"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="formulario_cliente_tree" model="ir.ui.view"> 
+            <field name="name">formulario_cliente_hospital.tree</field>
+            <field name="model">hospitalcj_clientes_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="tipoidentificacion"/>
+                    <field name="numero_identificacion"/>
+                    <field name="genero"/>
+                    <field name="fecha_nacimiento"/>
+                    <field name="email"/>
+                    <field name="departamento_id"/>
+                    <field name="municipio_id"/>
+                    <field name="pais_id"/>
+                    <field name="estado"/>
+                    <field name="doctor"/>
+                    <!-- <field name="cita_medica"/> -->
+                    <field name="observaciones"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_cliente_hospital_action_product" model="ir.actions.act_window">
+            <field name="name">Formulario Cliente Hospital</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hospitalcj_clientes_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_cliente_hospital_menu" name="Clientes Hospital Central Javeriano" sequence="3"/>
+        <menuitem id="formulario_cliente_submenu_name_menu" name="Sub Clientes Hospital Central Javeriano" action="formulario_cliente_hospital_action_product" parent="formulario_cliente_hospital_menu" sequence="3"/>
+</odoo>

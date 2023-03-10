@@ -1,0 +1,294 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* todo_incluido_final
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230115\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-03 23:46+0000\n"
+"PO-Revision-Date: 2023-03-03 23:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__birth_date
+msgid "Birth date"
+msgstr "Fecha Nacimiento"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+msgid "Cancel reservation"
+msgstr "Cancelar Reservacion"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__state__cancelled
+msgid "Cancelado"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__tipeidentification__cedula
+msgid "Cedula"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__country
+msgid "Choose your country"
+msgstr "Digite Su Pais"
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+msgid "Confirm reservation"
+msgstr "Confirmar Reservacion"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__state__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.actions.act_window,name:todo_incluido_final.country_action_product
+msgid "Country"
+msgstr "Pais"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__create_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__create_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__create_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__create_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__create_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__create_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__usuario_id
+msgid "Customer"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__tipeidentification__dni
+msgid "DNI"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.actions.act_window,name:todo_incluido_final.departamento_action_product
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__department
+#: model:ir.ui.menu,name:todo_incluido_final.departamento_menu
+msgid "Departament"
+msgstr "Departamento"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__nom_state
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__department
+msgid "Departamento"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__Reserved_days
+msgid "Dias Reservados"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__display_name
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__display_name
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__display_name
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__End_date
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: todo_incluido_final
+#: model:ir.model,name:todo_incluido_final.model_country_form
+msgid "Este formulario crecimiento"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model,name:todo_incluido_final.model_form_departament
+#: model:ir.model,name:todo_incluido_final.model_form_municipality
+msgid "Este formulario es para los clientes premium starbucks"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.formulario_cliente_submenu_name_menu
+msgid "Formulario Diego"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.formulario_cliente_menu
+msgid "Formulario Diego Prueba"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+msgid "Go to draft"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__id
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__id
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__id
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__id
+msgid "ID"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__tipeidentification__pasaporte
+msgid "Identificacion Pasaporte"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+msgid "Informacion Cliente"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form____last_update
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament____last_update
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality____last_update
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__write_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__write_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__write_uid
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__write_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_departament__write_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__write_date
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.country_grade_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.departamento_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.municipio_grade_form
+msgid "Level"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+msgid "Mark as done"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.actions.act_window,name:todo_incluido_final.municipio_action_product
+#: model:ir.model.fields,field_description:todo_incluido_final.field_form_municipality__name_municipality
+msgid "Municipio"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__number_identification
+msgid "Numberidentification"
+msgstr "Numero Identificacion"
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.country_menu
+msgid "Pais"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.country_grade_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.departamento_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.formulario_cliente_form
+#: model_terms:ir.ui.view,arch_db:todo_incluido_final.municipio_grade_form
+msgid "Partner Level"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__product_id
+msgid "Product"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields.selection,name:todo_incluido_final.selection__products_booking__state__done
+msgid "Realizado"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__Star_date
+msgid "Star Date"
+msgstr "Fecha Inicio"
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.departamento_submenu_name_menu
+msgid "Sub Menu Departamento"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.country_submenu_name_menu
+msgid "Sub Menu Pais"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.ui.menu,name:todo_incluido_final.municipio_submenu_name_menu
+msgid "Sub Menu municipio"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_country_form__name_country
+msgid "country"
+msgstr "Pais"
+
+#. module: todo_incluido_final
+#: model:ir.actions.act_window,name:todo_incluido_final.formulario_cliente_action_product
+msgid "formulario_cliente"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__municipality
+#: model:ir.ui.menu,name:todo_incluido_final.municipio_menu
+msgid "municipality"
+msgstr "Municipio"
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__notes
+msgid "notes"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model,name:todo_incluido_final.model_products_booking
+msgid "products_booking"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__tipeidentification
+msgid "select identification type"
+msgstr ""
+
+#. module: todo_incluido_final
+#: model:ir.model.fields,field_description:todo_incluido_final.field_products_booking__state
+msgid "state"
+msgstr "Estado"

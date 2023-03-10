@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!--Departamento-->
+        <record id="departamento_grade_form" model="ir.ui.view"> 
+            <field name="name">departamento.form</field>
+            <field name="model">formulario_departamento_stargym</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                
+                            <field name="nombre_departamento"/>
+                            
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="departamento_grade_tree" model="ir.ui.view"> 
+            <field name="name">departamento.tree</field>
+            <field name="model">formulario_departamento_stargym</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_departamento"/>
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="departamento_action_product" model="ir.actions.act_window">
+            <field name="name">departamento</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_departamento_stargym</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="departamento_menu" name="Departamento" sequence="4"/>
+        <menuitem id="departamento_submenu_name_menu" name="Sub Menu Departamento" action="departamento_action_product" parent="departamento_menu" sequence="4"/>
+
+</odoo>

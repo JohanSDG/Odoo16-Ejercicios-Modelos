@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <report
+            string="Informe visita"
+            id="report_visit_card"
+            model="udemy_visit_models"
+            report_type="qweb-pdf"
+            name="custom_crm.report_visit_card"
+            file="custom_crm.report_visit_card"
+            attachment_use="True"
+        />
+    </data>
+</odoo>
+

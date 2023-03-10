@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="formulario_cliente_form" model="ir.ui.view"> 
+            <field name="name">formulario_traduccion.form</field>
+            <field name="model">my_modulo_traduccion</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <notebook >
+                                <group>
+                                    <field name="whatsapp"/>
+                                    <field name="notes"/>
+                                </group>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="formulario_cliente_tree" model="ir.ui.view"> 
+            <field name="name">formulario_traduccion.tree</field>
+            <field name="model">my_modulo_traduccion</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="whatsapp"/>
+                    <field name="notes"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_traduccion_action_product" model="ir.actions.act_window">
+            <field name="name">formulario_traduccion</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">my_modulo_traduccion</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_traduccion_menu" name="Premium Traduccion" sequence="4"/>
+        <menuitem id="formulario_traduccion_submenu_name_menu" name="Sub Traduccion " action="formulario_traduccion_action_product" parent="formulario_traduccion_menu" sequence="4"/>
+</odoo>
+
+

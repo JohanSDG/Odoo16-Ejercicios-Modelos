@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="formulario_clientegym_form" model="ir.ui.view"> 
+            <field name="name">cliente StarGym.form</field>
+            <field name="model">stargym_usuario_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+
+                        <header>
+                            <field name="estado" widget="statusbar" statusbar_visible="new,confirmed,inactive" statusbar_colors='{"new": "confirmed", "inactive": "orange","inactive": "green"}'/>
+                            <button name="confirmar_entrada" string="Confirmar" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['new'])]}"/>
+                            <button name="mark_as_done" string="inactivo" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['confirmed'])]}"/>
+                            <button name="change_borrador" string="nuevo" type="object" class="oe_highlight" attrs="{'invisible': [('estado', 'not in', ['cancelled'])]}"/>
+                        </header>
+
+                        <notebook >
+                                <page name="general_information_clientegym" string="Premium StarGym">
+                                    <group>
+                                        <field name="nombre"/>
+                                        <field name="apellido"/>
+                                        <field name="fecha_nacimiento"/>
+                                        <!-- <field name="edad"/> -->
+                                        <field name="ciudad"/>
+                                        <field name="email"/>
+                                        <field name="referido"/>
+                                        <field name="tipoidentificacion"/>
+                                        <field name="numero_identificacion"/>
+                                        <field name="genero"/>
+                                        <field name="peso"/>
+                                        <field name="discapacidad"/>
+                                        <field name="horarios_entrenamiento"/>
+                                        <field name="estado"/>
+                                        <field name="entrenador"/>
+                                        <field name="departamento_id"/>
+                                        <field name="municipio_id"/>
+                                        <field name="pais_id"/>
+                                    </group>
+                                </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>        
+<!--esta es la vista de lista -->
+        <record id="formulario_clientegym_tree" model="ir.ui.view"> 
+            <field name="name">cliente StarGym.tree</field>
+            <field name="model">stargym_usuario_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="fecha_nacimiento"/>
+                    <!-- <field name="edad"/> -->
+                    <field name="ciudad"/>
+                    <field name="email"/>
+                    <field name="referido"/>
+                    <field name="tipoidentificacion"/>
+                    <field name="numero_identificacion"/>
+                    <!-- <field name="genero"/> -->
+                    <field name="peso"/>
+                    <!-- <field name="discapacidad"/> -->
+                    <!-- <field name="horarios_entrenamiento"/> -->
+                    <field name="estado"/>
+                    <!-- <field name="entrenador"/> -->
+					<field name="departamento_id"/>
+					<field name="municipio_id"/>
+					<!-- <field name="pais_id"/> -->
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_clientegym_action_product" model="ir.actions.act_window">
+            <field name="name">cliente StarGym</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">stargym_usuario_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_clientegym_menu" name="Premium StarGym" sequence="1"/>
+        <menuitem id="formulario_clientegym_submenu_name_menu" name="Sub StarGym" action="formulario_clientegym_action_product" parent="formulario_clientegym_menu" sequence="1"/>
+</odoo>

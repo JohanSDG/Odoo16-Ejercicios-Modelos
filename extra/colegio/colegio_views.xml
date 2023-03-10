@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<record id="colegio_grade_form" model="ir.ui.view"> 
+            <field name="name">colegio.form</field>
+            <field name="model">formulario_colegio_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombre"/>
+                            <field name="apellido"/>
+                            <!--<field name="fecha_nacimiento"/>-->
+                            <field name="genero"/>
+                            <field name="email"/>
+                            <field name="materia"/>
+                            <field name="profesor"/>
+                            <field name="is_active"/>
+                            <field name="almuerzo"/>
+                            <!--<field name="edad"/>-->
+                            <field name="observaciones"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="colegio_grade_tree" model="ir.ui.view"> 
+            <field name="name">colegio.tree</field>
+            <field name="model">formulario_colegio_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombre"/>
+                    <!--<field name="fecha_nacimiento"/>-->
+                    <field name="apellido"/>
+                    <field name="genero"/>
+                    <field name="email"/>
+                    <field name="materia"/>
+                    <field name="profesor"/>
+                    <field name="is_active"/>
+                    <field name="almuerzo"/>
+                    <!--<field name="edad"/>-->
+                    <field name="observaciones"/>
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="colegio_action_product" model="ir.actions.act_window">
+            <field name="name">colegio</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_colegio_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="colegio_menu" name="colegio" sequence="6"/>
+        <menuitem id="colegio_submenu_name_menu" name="Sub Menu" action="colegio_action_product" parent="colegio_menu" sequence="6"/>
+</odoo>

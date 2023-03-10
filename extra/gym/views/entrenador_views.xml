@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Pais-->
+        <record id="entrenador_form" model="ir.ui.view"> 
+            <field name="name">Entrenador/a.form</field>
+            <field name="model">entrenador_modulos</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nombre_entrenador"/>
+                            <field name="apellido"/>
+                            <field name="direccion"/>
+                            <field name="telefono"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="entrenador_tree" model="ir.ui.view"> 
+            <field name="name">entrenador/a.tree</field>
+            <field name="model">entrenador_modulos</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_entrenador"/>
+                    <field name="apellido"/>
+                    <field name="direccion"/>
+                    <field name="telefono"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="entrenador_action_product" model="ir.actions.act_window">
+            <field name="name">Entrenador/a</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">entrenador_modulos</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="entrenador_menu" name="Entrenador/a" sequence="10"/>
+        <menuitem id="entrenador_submenu_name_menu" name="Sub Menu Entrenador/a" action="entrenador_action_product" parent="entrenador_menu" sequence="7"/>
+
+</odoo>

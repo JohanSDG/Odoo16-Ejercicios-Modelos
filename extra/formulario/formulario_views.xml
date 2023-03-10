@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+
+        <!--esta es la vista de formulario -->
+        <record id="formulario_grade_form" model="ir.ui.view"> 
+            <field name="name">formulario.form</field>
+            <field name="model">formulario_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                            <field name="nombre"/>
+                            <field name="apellido"/>
+                            <field name="identificacion"/>
+                            <field name="observaciones"/>
+                            <field name="departamento_id"/>
+                            <field name="municipio_id"/>
+                            <field name="nom_pais"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="formulario_grade_tree" model="ir.ui.view"> 
+            <field name="name">formulario.tree</field>
+            <field name="model">formulario_models</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="identificacion"/>
+                    <field name="observaciones"/>
+                    <field name="departamento_id"/>
+                    <field name="municipio_id"/>
+                    <field name="nom_pais"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_action_product" model="ir.actions.act_window">
+            <field name="name">Formulario</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_menu" name="formulario" sequence="10"/>
+        <menuitem id="formulario_submenu_name_menu" name="Sub Menu" action="formulario_action_product" parent="formulario_menu" sequence="7"/>
+
+
+
+        <!--Departamento-->
+        <record id="departamento_grade_form" model="ir.ui.view"> 
+            <field name="name">departamento.form</field>
+            <field name="model">formulario_departamento</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                
+                            <field name="nombre_departamento"/>
+                            <field name="nom_pais"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="departamento_grade_tree" model="ir.ui.view"> 
+            <field name="name">departamento.tree</field>
+            <field name="model">formulario_departamento</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_departamento"/>
+                    <field name="nom_pais"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="departamento_action_product" model="ir.actions.act_window">
+            <field name="name">departamento</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_departamento</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="departamento_menu" name="departamento" sequence="7"/>
+        <menuitem id="departamento_submenu_name_menu" name="Sub Menu" action="departamento_action_product" parent="departamento_menu" sequence="7"/>
+        
+
+
+
+         <!--Municipio-->
+        <record id="municipio_grade_form" model="ir.ui.view"> 
+            <field name="name">municipio.form</field>
+            <field name="model">formulario_municipio</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nombre_municipio"/>
+                            <field name="departamento_id"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="municipio_grade_tree" model="ir.ui.view"> 
+            <field name="name">municipio.tree</field>
+            <field name="model">formulario_municipio</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nombre_municipio"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="municipio_action_product" model="ir.actions.act_window">
+            <field name="name">Formulario</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_municipio</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="municipio_menu" name="municipio" sequence="10"/>
+        <menuitem id="municipio_submenu_name_menu" name="Sub Menu" action="municipio_action_product" parent="municipio_menu" sequence="7"/>
+        
+
+
+
+        <!--Pais-->
+        <record id="pais_grade_form" model="ir.ui.view"> 
+            <field name="name">pais.form</field>
+            <field name="model">nombre_pais</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nom_pais"/>
+                            
+        
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="pais_grade_tree" model="ir.ui.view"> 
+            <field name="name">pais.tree</field>
+            <field name="model">nombre_pais</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nom_pais"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="pais_action_product" model="ir.actions.act_window">
+            <field name="name">pais</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">nombre_pais</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="pais_menu" name="Pais" sequence="10"/>
+        <menuitem id="pais_submenu_name_menu" name="Sub Menu" action="pais_action_product" parent="pais_menu" sequence="7"/>
+        
+</odoo>

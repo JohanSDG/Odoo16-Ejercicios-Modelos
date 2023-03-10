@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mercedes,concesionario_mercedes_models,model_concesionario_mercedes_models,base.group_user,1,1,1,1
+access_reservacion,reservacion_mercedes_models,model_reservacion_mercedes_models,base.group_user,1,1,1,1
+access_color,color_mercedes_models,model_color_mercedes_models,base.group_user,1,1,1,1

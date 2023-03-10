@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_products,products_booking,model_products_booking,base.group_user,1,1,1,1
+access_pais,formulario_pais_reserva,model_formulario_pais_reserva,base.group_user,1,1,1,1

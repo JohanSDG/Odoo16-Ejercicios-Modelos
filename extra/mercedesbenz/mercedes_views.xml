@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<record id="clientemercedes_grade_form" model="ir.ui.view"> 
+            <field name="name">clientemercedes.form</field>
+            <field name="model">concesionario_mercedes_models</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+
+                            <field name="nombre"/>
+                            <field name="apellido"/>
+                            <field name="genero"/>
+                            <field name="email"/>
+                            <field name="fecha_nacimiento"/>
+                            <field name="email"/>
+                            <field name="mercedes_reservacion"/>
+                        
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="clientemercedes_grade_tree" model="ir.ui.view"> 
+            <field name="name">clientemercedes.tree</field>
+            <field name="model">concesionario_mercedes_models</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="genero"/>
+                    <field name="email"/>
+                    <field name="fecha_nacimiento"/>
+                    <field name="email"/>
+                    <field name="mercedes_reservacion"/>
+
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="clientemercedes_action_product" model="ir.actions.act_window">
+            <field name="name">clientemercedes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">concesionario_mercedes_models</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="clientemercedes_menu" name="Cliente Mercedes Benz" sequence="5"/>
+        <menuitem id="clientemercedes_submenu_name_menu" name="Sub Menu" action="clientemercedes_action_product" parent="clientemercedes_menu" sequence="5"/>
+</odoo>

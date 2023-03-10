@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Pais-->
+        <record id="country_grade_form" model="ir.ui.view"> 
+            <field name="name">Country.form</field>
+            <field name="model">country_form</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="name_country"/>
+                            
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="country_grade_tree" model="ir.ui.view"> 
+            <field name="name">country.tree</field>
+            <field name="model">country_form</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="name_country"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="country_action_product" model="ir.actions.act_window">
+            <field name="name">Country</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">country_form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="country_menu" name="Pais" sequence="10"/>
+        <menuitem id="country_submenu_name_menu" name="Sub Menu Pais" action="country_action_product" parent="country_menu" sequence="7"/>
+
+</odoo>

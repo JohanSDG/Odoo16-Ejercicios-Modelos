@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="product_custom_text" inherit_id="website_sale.product" active="True" name="Pureba de cosas" priority="22">
+        <xpath expr="//div[@id='o_product_terms_and_share']" position="before">
+            <div class="oe_product_website_description_booking">
+                <span class="oe_title">Descripcion para reservas:</span>
+                <span t-field="product.website_description_booking"/>
+            </div>
+        </xpath>
+    </template>
+    </data>
+</odoo>

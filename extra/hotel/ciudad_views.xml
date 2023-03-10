@@ -1,0 +1,41 @@
+<!--Ciudad-->
+        <record id="pais_grade_form" model="ir.ui.view"> 
+            <field name="name">ciudad.form</field>
+            <field name="model">nombre_ciudad</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            <field name="nom_ciudad"/>
+                            
+        
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="ciudad_grade_tree" model="ir.ui.view"> 
+            <field name="name">ciudad.tree</field>
+            <field name="model">nombre_ciudad</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    <field name="nom_ciudad"/>
+                    
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="ciudad_action_product" model="ir.actions.act_window">
+            <field name="name">ciudad</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">nombre_ciudad</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="ciudad_menu" name="ciudad" sequence="6"/>
+        <menuitem id="ciudad_submenu_name_menu" name="Sub Menu" action="ciudad_action_product" parent="ciudad_menu" sequence="6"/>
+        

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--Doctor-->
+        <record id="doctor_grade_form" model="ir.ui.view"> 
+            <field name="name">Doctor.form</field>
+            <field name="model">formulario_doctor_clinicacj</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <group>
+                           
+                            
+                            <field name="nombre_medico"/>
+                            <field name="apellido"/>
+                            <field name="tipoidentificacion"/>
+                            <field name="numero_identificacion"/>
+                            <field name="genero"/>
+                            <field name="fecha_nacimiento"/>
+                            <field name="email"/>
+					        <field name="departamento_id"/>
+                            <field name="municipio_id"/>
+                            <field name="especializacion"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <!--esta es la vista de lista -->
+        <record id="doctor_grade_tree" model="ir.ui.view"> 
+            <field name="name">Doctor.tree</field>
+            <field name="model">formulario_doctor_clinicacj</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+                    
+                    <field name="nombre_medico"/>
+                    <field name="apellido"/>
+                    <field name="tipoidentificacion"/>
+                    <field name="numero_identificacion"/>
+                    <field name="genero"/>
+                    <field name="fecha_nacimiento"/>
+                    <field name="email"/>
+                    <field name="departamento_id"/>
+                    <field name="municipio_id"/>
+                    <field name="especializacion"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="doctor_action_product" model="ir.actions.act_window">
+            <field name="name">Doctor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_doctor_clinicacj</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="doctor_menu" name="Doctor" sequence="3"/>
+        <menuitem id="doctor_submenu_name_menu" name="Sub Menu municipio" action="doctor_action_product" parent="doctor_menu" sequence="3"/>
+        
+</odoo>

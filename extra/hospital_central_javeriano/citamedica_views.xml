@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>   
+<!--esta es la vista de formulario -->
+        <record id="formulario_cita_form" model="ir.ui.view"> 
+            <field name="name">Formulario Cita Medica.form</field>
+            <field name="model">formulario_citamedica</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+                        <notebook >
+                            <page name="general_cita_hospitaljc" string="Saca Cita Medica Hospital Central Javeriano">
+                                <group>
+                                    <field name="nombrecita_medica"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+<!--esta es la vista de lista -->
+        <record id="formulario_cita_tree" model="ir.ui.view"> 
+            <field name="name">formulario Cita Medica.tree</field>
+            <field name="model">formulario_citamedica</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombrecita_medica"/>
+                </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="formulario_cita_medica_action_product" model="ir.actions.act_window">
+            <field name="name">Formulario Cliente Hospital</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">formulario_citamedica</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="formulario_cita_medica_menu" name="Cita Medica" sequence="3"/>
+        <menuitem id="formulario_cliente_submenu_name_menu" name="Sub Cita Medica" action="formulario_cita_medica_action_product" parent="formulario_cita_medica_menu" sequence="3"/>
+</odoo>
