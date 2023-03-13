@@ -1,0 +1,195 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* coworking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230115\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-13 08:18+0000\n"
+"PO-Revision-Date: 2023-03-13 08:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Cancel reservation"
+msgstr "Cancelar Reservacion"
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__state__cancelled
+msgid "Cancelado"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__tipeidentification__cedula
+msgid "Cedula"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Confirm reservation"
+msgstr "Confirmar Reservacion"
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__state__confirmed
+msgid "Confirmado"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__customer_id
+msgid "Customer "
+msgstr "Cliente"
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__tipeidentification__dni
+msgid "DNI"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__days_booked
+msgid "Days Booked"
+msgstr "Dias Reservados"
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__end_date
+msgid "End Date"
+msgstr "fecha de finalización"
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__state
+msgid "Estado"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Go to draft"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__id
+msgid "ID"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__tipeidentification__pasaporte
+msgid "Identificacion Pasaporte"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Informacion General"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Level"
+msgstr ""
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Mark as done"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__number_identification
+msgid "Number Identification"
+msgstr "Numero Identificacion"
+
+#. module: coworking
+#: model_terms:ir.ui.view,arch_db:coworking.coworking_booking_form
+msgid "Partner Level"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__product_id
+msgid "Product Hotel"
+msgstr "Hotel"
+
+#. module: coworking
+#: model:ir.model.fields.selection,name:coworking.selection__coworking_booking__state__done
+msgid "Realizado"
+msgstr ""
+
+#. module: coworking
+#. odoo-python
+#: code:addons/coworking/models/coworking.py:0
+#, python-format
+msgid "Revisa la fecha de ingreso y salida"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__valor_reserva
+msgid "Valor Reserva"
+msgstr ""
+
+#. module: coworking
+#: model:ir.actions.act_window,name:coworking.coworking_booking_action_product
+#: model:ir.model,name:coworking.model_coworking_booking
+msgid "coworking_booking"
+msgstr ""
+
+#. module: coworking
+#: model:ir.ui.menu,name:coworking.coworking_booking_menu
+#: model:ir.ui.menu,name:coworking.coworking_booking_submenu_name_menu
+msgid "coworking_hotel"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__notes
+msgid "notes"
+msgstr "Sugerencias"
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__number
+msgid "reservation number"
+msgstr ""
+
+#. module: coworking
+#: model:ir.model.fields,field_description:coworking.field_coworking_booking__tipeidentification
+msgid "select identification type"
+msgstr ""

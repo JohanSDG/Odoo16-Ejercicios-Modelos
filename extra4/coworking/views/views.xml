@@ -1,0 +1,76 @@
+<odoo>
+  <data>
+    <!-- Vista formulario con estilos para las reservas -->
+      <record id="coworking_booking_form" model="ir.ui.view"> 
+            <field name="name">coworking_booking.form</field>
+            <field name="model">coworking_booking</field>
+            <field name="arch" type="xml">
+                <form string="Partner Level">
+                    <sheet string="Level">
+
+                        <header>
+                            <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done,cancelled" statusbar_colors='{"draft": "blue", "confirmed": "orange", "done": "green", "cancelled": "red"}'/>
+                            <button name="confirm_reservation" string="Confirm reservation" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+                            <button name="cancel_reservation" string="Cancel reservation" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                            <button name="mark_as_done" string="Mark as done" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['confirmed'])]}"/>
+                            <button name="change_to_draft" string="Go to draft" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'not in', ['cancelled'])]}"/>
+                        </header>
+
+                        <notebook >
+                  <page name="general_information_booking" string="Informacion General">
+                      <!-- Fila con dos columnas para organizar los campos de la reserva -->
+                      <group>
+                          <!-- Columna con los campos de información básica de la reserva -->
+                          <group>
+                              <field name="customer_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="product_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="start_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                              <field name="end_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                          </group>
+                          <!-- Columna con los campos adicionales de la reserva -->
+                          <group>
+                              <field name="tipeidentification"/>
+                              <field name="number_identification"/>
+                              <field name="days_booked"/>
+                              <field name="valor_reserva"/>
+                              <field name="notes"/>
+                          </group>
+                      </group>
+                  </page>
+                </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    <!-- Vista Lista -->
+
+    <!--esta es la vista de lista -->
+        <record id="coworking_booking_tree" model="ir.ui.view"> 
+            <field name="name">coworking_booking.tree</field>
+            <field name="model">coworking_booking</field>
+            <field name="arch" type="xml">
+            <tree>
+              <field name="customer_id"/>
+              <field name="tipeidentification"/>
+              <field name="number_identification"/>
+              <field name="product_id"/>
+              <field name="start_date"/>
+              <field name="end_date"/>
+              <field name="days_booked"/>
+              <field name="valor_reserva"/>
+              <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'done'" decoration-warning="state == 'confirmed'" decoration-danger="state == 'cancelled'"/>
+            </tree>
+            </field>                                                                                                                                   
+        </record>
+
+        <record id="coworking_booking_action_product" model="ir.actions.act_window">
+            <field name="name">coworking_booking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">coworking_booking</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="coworking_booking_menu" name="coworking_hotel" sequence="25"/>
+        <menuitem id="coworking_booking_submenu_name_menu" name="coworking_hotel" action="coworking_booking_action_product" parent="coworking_booking_menu" sequence="25"/>
+  </data>
+</odoo>
